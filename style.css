@@ -1,0 +1,76 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+
+input{
+    padding: .5%;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 90%;
+    height: 90%;
+    border-radius:20px;
+    background-color: transparent;
+    border:0;
+    outline: none;
+    color:black;
+}
+::placeholder{
+    color:black
+}
+
+@media screen and (max-width:500px) {
+    
+}
+
+.search{
+    margin:auto;
+    height: 50px;
+    width: 500px;
+    border-radius: 15px;
+    position:fixed;
+    display: flex;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:rgba(72, 72, 72, 0.81);
+   }
+.search .bar{
+    height:50px;
+    display: flex;
+    background:transparent;
+    border-radius: 15px 0px 0px 15px;
+}
+.bar .reddot{
+    width:15px;
+    margin-left: 15px;
+    margin-top: 17.5px;
+    margin-bottom: 17.5px;
+    height:15px;
+    border-radius: 10px;
+    background-color: rgb(255, 92, 92);
+}
+.bar .gredot{
+    width:15px;
+    margin: 15px;
+    margin-top: 17.5px;
+    margin-bottom: 17.5px;
+    height:15px;
+    border-radius: 10px;
+    background-color: rgb(87, 204, 81);
+}
+.search-elem{
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.336);
+    border-radius: 10px;
+}
+.search{
+    transition: all 1s linear;
+}
+.search-elem{
+    transition: all 2s linear;
+}

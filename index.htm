@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="search">
+        <div class="bar">
+            <div class="reddot" id="rdot"></div>
+            <div class="gredot" id="gdot"></div>
+        </div>
+        <div class="search-elem" id="search">
+            <input type="text" name="txt" placeholder="Search on google..." id="txt">
+        </div>
+    </div>
+    <script src="jquery.js"></script>
+    <script>
+        $("#search").css("width", "100%");
+        function main() {
+            $("#search").toggleClass("active");
+            if ($("#search").hasClass("active")) {
+                $("#search").css("width", "0px");
+                $(".search").css("width","75px")
+            }
+            else {
+                $(".search-elem").css("transition","all 1.50s linear");
+                $(".search").css("transition","all 1.25s linear");
+                $("#search").css("width", (500-75)+"px");
+                $(".search").css("width","500px");
+            }
+        }
+        $("#rdot").click(main)
+    </script>
+</body>
+
+</html>
